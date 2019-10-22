@@ -12,6 +12,14 @@ import java.io.Serializable;
 @Table(name = "employee")
 public class Employee implements Serializable {
 
+    public Employee() {
+
+    }
+
+    public Employee(String empName, String empEmail) {
+        this.empName = empName;
+        this.empEmail = empEmail;
+    }
 
     /**
      * @Description
